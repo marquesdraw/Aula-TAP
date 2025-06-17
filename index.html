@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        header {
+            background-color: #0066cc;
+            color: white;
+            font-size: 1.5rem;
+            padding: 1rem 2rem;
+            border-radius: 8px 8px 0 0;
+            text-align: center;
+            width: 80%;
+            max-width: 500px;
+        }
+
+        form {
+            background-color: white;
+            padding: 2rem;
+            border-radius: 0 0 8px 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            width: 80%;
+            max-width: 500px;
+            box-sizing: border-box;
+        }
+
+        select, button {
+            width: 100%;
+            padding: 0.75rem;
+            margin-top: 1rem;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 1rem;
+        }
+
+        button {
+            background-color: #0066cc;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0066cc;
+        }
+    </style>
+</head>
+<body>
+    <header>Veja se a sua cadeia carbonica é trans/cis, e se a cadeia possui carboni quiral</header>
+    <form action="ind.php" method="post">
+        <select name="value1" id="value1">
+            <option value="m">Formula molecular</option>
+    
+            <option value="e">Formula escrita</option>
+
+
+        </select>
+        <button type="submit">Entrar</button>
+
+    </form>
+
+</body>
+</html>
